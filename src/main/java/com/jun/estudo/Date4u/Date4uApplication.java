@@ -10,11 +10,8 @@ import com.jun.estudo.Date4u.core.FileSystem;
 public class Date4uApplication {
 
 	public static void main(String[] args) {
-	ConfigurableApplicationContext appContexto = SpringApplication.run(Date4uApplication.class, args);
-	
-	FileSystem fs = appContexto.getBean(FileSystem.class);
-	System.out.println(DataSize.ofBytes(fs.getFreeDiskSpace()).toGigabytes()+ " GB");
-		
+		SpringApplication.run(Date4uApplication.class, args);
+
 	}
 
 }
