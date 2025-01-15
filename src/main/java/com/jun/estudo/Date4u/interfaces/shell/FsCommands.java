@@ -9,7 +9,11 @@ import com.jun.estudo.Date4u.core.FileSystem;
 @ShellComponent
 public class FsCommands {
 
-	private final FileSystem fs = new FileSystem();
+	private final FileSystem fs;
+	
+	public FsCommands(FileSystem fs) {
+		this.fs = fs;
+	}
 	
 	@ShellMethod("Exibe o espaco livre minimo necessario ")
 	public long minimumFreeDiskSpace() {
